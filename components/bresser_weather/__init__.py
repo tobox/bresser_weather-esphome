@@ -200,10 +200,7 @@ async def to_code(config):
         await automation.build_automation(trigger, [(WeatherData, "x")], conf)
 
     # Add library dependencies
-    cg.add_platformio_option("lib_deps", ["matthias-bs/BresserWeatherSensorReceiver@0.37.0"])
-    cg.add_platformio_option("lib_deps", ["jgromes/RadioLib@7.5.0"])
-    cg.add_platformio_option("lib_deps", ["vshymanskyy/Preferences@2.2.2"])
-    cg.add_platformio_option("lib_deps", ["bblanchon/ArduinoJson@7.4.2"])
+    cg.add_platformio_option("lib_deps", ["https://github.com/marius1/BresserWeatherSensorReceiver.git#configurable-spi-bus"])
     # Add build flags for selected radio and pins
     radio_define = RADIO_TYPES[config[CONF_RADIO]]
     cg.add_build_flag(f"-DUSE_{radio_define}")
