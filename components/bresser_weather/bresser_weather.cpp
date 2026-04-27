@@ -48,7 +48,7 @@ namespace esphome
                     if (this->sensor_id_sensor_ != nullptr)
                     {
                         char id_str[16];
-                        snprintf(id_str, sizeof(id_str), "%08X", (unsigned int)this->ws_.sensor[i].sensor_id);
+                        snprintf(id_str, sizeof(id_str), "0x%08X", (unsigned int)this->ws_.sensor[i].sensor_id);
                         this->sensor_id_sensor_->publish_state(id_str);
                     }
 
