@@ -39,7 +39,7 @@ namespace esphome
             void set_sensor_id_text_sensor(text_sensor::TextSensor *sensor) { sensor_id_sensor_ = sensor; }
             void set_filter_sensor_id(uint32_t filter_id)
             {
-                filter_sensor_id_ = 16654234 ; //filter_id;
+                filter_sensor_id_ = 375734836 ; //filter_id;
                 filter_enabled_ = true;
             }
 
