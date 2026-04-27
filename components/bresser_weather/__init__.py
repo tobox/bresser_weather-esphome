@@ -156,7 +156,7 @@ async def to_code(config):
         cg.add(var.set_filter_sensor_id(config[CONF_FILTER_SENSOR_ID]))
 
     # Add library dependencies
-    cg.add_platformio_option("lib_deps", ["matthias-bs/BresserWeatherSensorReceiver@0.37.0"])
+    cg.add_platformio_option("lib_deps", ["matthias-bs/BresserWeatherSensorReceiver@0.39.0"])
     cg.add_platformio_option("lib_deps", ["jgromes/RadioLib@7.4.0"])
     cg.add_platformio_option("lib_deps", ["vshymanskyy/Preferences@2.2.2"])
     cg.add_platformio_option("lib_deps", ["bblanchon/ArduinoJson@7.4.2"])
