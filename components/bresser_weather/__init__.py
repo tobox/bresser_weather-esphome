@@ -94,7 +94,7 @@ CONFIG_SCHEMA = cv.Schema(
             device_class=DEVICE_CLASS_BATTERY,
         ),
         cv.Optional(CONF_SENSOR_ID): text_sensor.text_sensor_schema(),
-        cv.Optional(CONF_FILTER_SENSOR_ID): cv.hex_uint32_t,
+        cv.Optional(CONF_FILTER_SENSOR_ID): cv.uint32_t,
     }
 ).extend(cv.COMPONENT_SCHEMA)
 
